@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+ul, li, ol {
+    list-style: none;
+}
+
+.clearfix {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    border-bottom: 1px solid #ccc;
+    background-color: orange;
+    position: fixed;
+    margin-top: -120px;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-top: -220px;
+    }
+    to {
+        margin-top: -120px;
+    }
+}
+
+.header-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+nav {
+    float: right;
+}
+
+nav li {
+    float: left;
+    line-height: 100px;
+    margin-right: 50px;
+    width: 100px;
+    text-align: center;
+}
+
+nav li a {
+    color: red;
+    font-weight: bold;
+}
+
+nav li a:hover {
+    background-color: skyblue;
+    display: block;
+    width: 100%;
+}
+
+.header-logo {
+    height: 100px;
+    width: auto;
+}
+
+main {
+    width: 100%;
+    text-align: center;
+    margin: 120px 0 100px;
+    background-color: #ccc;
+}
+
+.main-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.main-wrapper > video {
+    width: 100%;
+    height: auto;
+}
+
+.event-image {
+    width: 350px;
+    height: auto;
+}
+
+section {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.best-menu {
+    display: inline-block;
+    margin-right: 60px;
+}
+
+.best-menus-image {
+    width: 300px;
+    height: auto;
+}
+
+figcaption {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.price {
+    display: block;
+    color: darkorange;
+}
+
+.order {
+    margin: 200px 0;
+    height: 200px;
+    width: 45%;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    padding: 10px;
+}
+
+.delivery {
+    float: left;
+}
+
+.pick-up {
+    float: right;
+    height: 550px;
+}
+
+.order button {
+    margin: 30px;
+    font-size: 20px;
+    width: 100px;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: white;
+}
+
+.order iframe {
+    width: 450px;
+    height: 380px;
+}
+
+.chain-request {
+    clear: both;
+    border: 1px solid #ccc;
+    padding: 30px;
+    padding-left: 200px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.chain-request p {
+    margin: 15px;
+    color: red;
+    font-weight: bold;
+}
+
+.chain-request form > label {
+}
+
+.chain-request form > label > span {
+    color: red;
+    font-weight: bold;
+}
+
+.chain-request form > input, #form-contents {
+    display: block;
+    margin: 5px;
+    width: 300px;
+    height: 30px;
+    border: 1px solid #ccc;
+}
+
+.radio-btn {
+    display: inline;
+}
+
+#form-contents {
+    width: 800px;
+    height: 300px;
+}
+
+footer {
+    background-color: black;
+    height: 100px;
+}
+
+.footer-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+    line-height: 100px;
+}
+
+.footer-wrapper img {
+    height: 100px;
+}
+
+.copyright {
+    float: right;
+}

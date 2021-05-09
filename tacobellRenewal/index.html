@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타코벨</title>
+    <link rel="stylesheet" href="css/common.css">
+</head>
+<body>
+    <header>
+        <div class="header-wrapper">
+            <img class="header-logo" src="image/tacobell-logo.png" alt="헤더 로고">
+            <nav>
+                <ul>
+                    <li><a href="#">메뉴</li>
+                    <li><a href="#">회사소개</a></li>
+                    <li><a href="#">매장검색</a></li>
+                    <li><a href="#">고객센터</a></li>
+                    <li><a href="#">주문</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main-wrapper">
+            <i class="left-arrow fas fa-arrow-left"></i>
+            <img class="event-image" src="image/event0.jpg" alt="이벤트0">
+            <img class="event-image" src="image/event1.jpg" alt="이벤트1">
+            <img class="event-image" src="image/event2.jpg" alt="이벤트2">
+            <video src="video/ad.mp4" muted controls autoplay></video>
+        </div>
+    </main>
+    <section>
+        <h1>대표 메뉴</h1>
+        <div class="best-menus">
+            <div class="best-menu">
+                <figure>
+                    <img class="best-menus-image" src="image/menus/shrimp-taco-set.jpg" alt="쉬림프 타코 세트">
+                    <figcaption>
+                        쉬림프 타코 2개 + 콜라
+                        <span class="price">8,600원</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="best-menu">
+                <figure>
+                    <img class="best-menus-image" src="image/menus/shrimp-buritto-set.jpg" alt="쉬림프 부리또 세트">
+                    <figcaption>
+                        쉬림프 부리또 + 나초칩스 + 콜라
+                        <span class="price">8,900원</span>
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="best-menu">
+                <figure>
+                    <img class="best-menus-image" src="image/menus/burrito-bowl.jpg" alt="부리또 보울 세트">
+                    <figcaption>
+                        카니타스 (돼지고기) 또는 통살치킨 중 선택
+                        <span class="price">7,300원</span>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="orders">
+            <div class="delivery order">
+                <h1>배달 주문</h1>
+                <button>회원</button>
+                <button>비회원</button>
+            </div>
+            <div class="pick-up order">
+                <h1>포장 주문</h1>
+                <button>회원</button>
+                <button>비회원</button>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d203035.0575615816!2d126.9910507588679!3d37.33249853402843!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca392271f6367%3A0x47aaba001bae39a3!2z7YOA7L2U67KoIOyVleq1rOygleygkA!5e0!3m2!1sko!2skr!4v1620454776865!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+        <div class="chain-request">
+            <h1>가맹 문의</h1>
+            <p>*는 필수 입력 항목입니다.</p>
+            <form action="#">
+                <label for="form-name">성명 <span>*</span></label>
+                <input id="form-name" type="text" required>
+                <label for="form-email">이메일</label>
+                <input id="form-email" type="email">
+                <label for="form-phone" required>연락처 <span>*</span></label>
+                <input id="form-phone" type="text">
+                <label for="form-location">희망지역 <span>*</span></label>
+                <input id="form-location" type="text" required>
+                <label id="form-posession">점포 소유 여부 <span>*</span></label>
+                <label id="form-posession">점포 소유</label>
+                <input id="form-posession" class="radio-btn" type="radio" value="posession" required>
+                <label id="form-non-posession">점포 미소유</label>
+                <input id="form-non-posession" class="radio-btn" type="radio" value="posession" required>
+                <label id="form-address">소유 점포 주소</label>
+                <input id="form-address" type="text">
+                내용
+                <!-- <input id="form-contents" type="text"> -->
+                <textarea name="contents" id="form-contents" cols="30" rows="10"></textarea>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <img src="image/tacobell-logo.png" alt="푸터 로고">
+            <div class="copyright">
+                &copy; 2021 TACO BELL CORP. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

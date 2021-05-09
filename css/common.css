@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul, ol, li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/**********MAIN**********/
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+.header-wrapper {
+    width: 1200px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+.nav-and-icons {
+    float: right;
+    margin-right: 100px;
+}
+
+.developer-icon {
+    width: auto;
+    height: 100px;
+}
+
+nav {
+    float: left;
+} 
+
+nav > ul > li {
+    float: left;
+    padding: 0;
+    line-height: 100px;
+    width: 100px;
+    text-align: center;
+}
+
+nav > ul > li:hover {
+    background-color: lightseagreen;
+    cursor: pointer;
+}
+
+nav > ul > li > a {
+    color: red;
+    font-weight: bold;
+    display: block;
+}
+
+.header-icons {
+    float: left;
+    height: 100px;
+}
+
+.login-icon {
+    display: inline-block;
+    height: 100%;
+    vertical-align: center;
+    padding-top: 25px;
+}
+
+section {
+    width: 1200px;
+    height: 90vh;
+    margin: 100px auto 0;
+    background-image: url(/image/foster-lake.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+}
+
+footer {
+    background-color: grey;
+}
+
+.footer-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+    color: white;
+}
+
+.footer-wrapper a {
+    color: white;
+}
+
+.footer-wrapper a:hover {
+    color: blue;
+}
