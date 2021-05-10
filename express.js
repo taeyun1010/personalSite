@@ -52,15 +52,15 @@ app.post('/sign-up', function (req, res) {
 
 // conn.end();
 
-var server = app.listen(3000, function () {
-    console.log("Express server has started on port 3000")
-});
-
-// https.createServer({
-//   key: fs.readFileSync('./certificates/server.key'),
-//   cert: fs.readFileSync('./certificates/server.cert')
-// }, app).listen(3000, () => {
-//   console.log('Listening...')
+// var server = app.listen(3000, function () {
+//     console.log("Express server has started on port 3000")
 // });
+
+https.createServer({
+  key: fs.readFileSync('./certificates/server.key'),
+  cert: fs.readFileSync('./certificates/server.cert')
+}, app).listen(3000, () => {
+  console.log('Listening...')
+});
 
 app.use(express.static('public'));
