@@ -22,7 +22,7 @@ app.set('view engine', 'ejs');
 app.engine('html', require('ejs').renderFile);
 
 app.post('/sign-up', function (req, res) {
-    // console.log(req.body.id);
+    console.log(req.body.id);
     // res.render('sign-up-success.html');
 
     let id = req.body.id;
@@ -52,15 +52,15 @@ app.post('/sign-up', function (req, res) {
 
 // conn.end();
 
-// var server = app.listen(3000, function () {
-//     console.log("Express server has started on port 3000")
-// });
+var server = app.listen(3000, function () {
+    console.log("Express server has started on port 3000")
+});
 
-https.createServer({
-  key: fs.readFileSync('./certificates/server.key'),
-  cert: fs.readFileSync('./certificates/server.cert')
-}, app).listen(3000, () => {
-  console.log('Listening...')
-})
+// https.createServer({
+//   key: fs.readFileSync('./certificates/server.key'),
+//   cert: fs.readFileSync('./certificates/server.cert')
+// }, app).listen(3000, () => {
+//   console.log('Listening...')
+// });
 
 app.use(express.static('public'));

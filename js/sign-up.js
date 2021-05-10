@@ -13,7 +13,7 @@ function submitHandler(event) {
     // console.log(id);
     // console.log(password);
 
-    fetch("https://222.99.189.215:3000/sign-up", {
+    fetch("http://222.99.189.215:3000/sign-up", {
         // fetch("https://127.0.0.1:3000/sign-up", {
         method: 'post',
         headers: {
