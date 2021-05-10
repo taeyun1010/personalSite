@@ -8,7 +8,9 @@ a {
     color: black;
 }
 
-ul, li, ol {
+ul,
+li,
+ol {
     list-style: none;
 }
 
@@ -33,6 +35,7 @@ header {
     from {
         margin-top: -220px;
     }
+
     to {
         margin-top: -120px;
     }
@@ -43,11 +46,16 @@ header {
     margin: 0 auto;
 }
 
+.header-logo {
+    height: 100px;
+    width: auto;
+}
+
 nav {
     float: right;
 }
 
-nav li {
+nav>ul>li {
     float: left;
     line-height: 100px;
     margin-right: 50px;
@@ -58,17 +66,22 @@ nav li {
 nav li a {
     color: red;
     font-weight: bold;
+    display: block;
 }
 
-nav li a:hover {
+.mainmenu>a:hover {
     background-color: skyblue;
     display: block;
     width: 100%;
 }
 
-.header-logo {
-    height: 100px;
-    width: auto;
+.submenus {
+    display: none;
+}
+
+.mainmenu>a:hover .submenus {
+    display: block;
+    z-index: 10;
 }
 
 main {
@@ -83,7 +96,7 @@ main {
     margin: 0 auto;
 }
 
-.main-wrapper > video {
+.main-wrapper>video {
     width: 100%;
     height: auto;
 }
@@ -166,15 +179,15 @@ figcaption {
     font-weight: bold;
 }
 
-.chain-request form > label {
-}
+.chain-request form>label {}
 
-.chain-request form > label > span {
+.chain-request form>label>span {
     color: red;
     font-weight: bold;
 }
 
-.chain-request form > input, #form-contents {
+.chain-request form>input,
+#form-contents {
     display: block;
     margin: 5px;
     width: 300px;
