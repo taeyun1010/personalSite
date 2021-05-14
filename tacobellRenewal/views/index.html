@@ -6,13 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>타코벨</title>
-    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="/css/common.css">
 </head>
 
 <body>
     <header>
         <div class="header-wrapper">
-            <img class="header-logo" src="image/tacobell-logo.png" alt="헤더 로고">
+            <a href="/"><img class="header-logo" src="/image/tacobell-logo.png" alt="헤더 로고"></a>
             <nav>
                 <ul>
                     <li class="mainmenu">
@@ -27,6 +27,14 @@
                     <li class="mainmenu"><a href="#">매장검색</a></li>
                     <li class="mainmenu"><a href="#">고객센터</a></li>
                     <li class="mainmenu"><a href="#">주문</a></li>
+                    {% if user %}
+                    <li class="mainmenu"><a href="/auth/profile">마이페이지</a></li>
+                    <li class="mainmenu"><a href="/auth/logout">로그아웃</a></li>
+                    {% else %}
+                    <li class="mainmenu"><a id="login-link" href="/auth/login"><img class="login-icon"
+                                src="/image/user.png" alt="로그인, 회원가입"></a>
+                        {% endif %}
+                    </li>
                 </ul>
             </nav>
         </div>
@@ -34,9 +42,9 @@
     <main>
         <div class="main-wrapper">
             <i class="left-arrow fas fa-arrow-left"></i>
-            <img class="event-image" src="image/event0.jpg" alt="이벤트0">
-            <img class="event-image" src="image/event1.jpg" alt="이벤트1">
-            <img class="event-image" src="image/event2.jpg" alt="이벤트2">
+            <img class="event-image" src="/image/event0.jpg" alt="이벤트0">
+            <img class="event-image" src="/image/event1.jpg" alt="이벤트1">
+            <img class="event-image" src="/image/event2.jpg" alt="이벤트2">
             <video src="video/ad.mp4" muted controls autoplay></video>
         </div>
     </main>
@@ -45,7 +53,7 @@
         <div class="best-menus">
             <div class="best-menu">
                 <figure>
-                    <img class="best-menus-image" src="image/menus/shrimp-taco-set.jpg" alt="쉬림프 타코 세트">
+                    <img class="best-menus-image" src="/image/menus/shrimp-taco-set.jpg" alt="쉬림프 타코 세트">
                     <figcaption>
                         쉬림프 타코 2개 + 콜라
                         <span class="price">8,600원</span>
@@ -54,7 +62,7 @@
             </div>
             <div class="best-menu">
                 <figure>
-                    <img class="best-menus-image" src="image/menus/shrimp-buritto-set.jpg" alt="쉬림프 부리또 세트">
+                    <img class="best-menus-image" src="/image/menus/shrimp-buritto-set.jpg" alt="쉬림프 부리또 세트">
                     <figcaption>
                         쉬림프 부리또 + 나초칩스 + 콜라
                         <span class="price">8,900원</span>
@@ -63,7 +71,7 @@
             </div>
             <div class="best-menu">
                 <figure>
-                    <img class="best-menus-image" src="image/menus/burrito-bowl.jpg" alt="부리또 보울 세트">
+                    <img class="best-menus-image" src="/image/menus/burrito-bowl.jpg" alt="부리또 보울 세트">
                     <figcaption>
                         카니타스 (돼지고기) 또는 통살치킨 중 선택
                         <span class="price">7,300원</span>
@@ -113,7 +121,7 @@
     </section>
     <footer>
         <div class="footer-wrapper">
-            <img src="image/tacobell-logo.png" alt="푸터 로고">
+            <a href="/"><img src="/image/tacobell-logo.png" alt="푸터 로고"></a>
             <div class="copyright">
                 &copy; 2021 TACO BELL CORP. ALL RIGHTS RESERVED.
             </div>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>타코벨</title>
+    <link rel="stylesheet" href="/css/common.css">
+    <link rel="stylesheet" href="/css/signup.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-wrapper">
+            <a href="/"><img class="header-logo" src="/image/tacobell-logo.png" alt="헤더 로고"></a>
+            <nav>
+                <ul>
+                    <li class="mainmenu">
+                        <a href="#">메뉴</a>
+                        <ul class="all-menus">
+                            <li class="submenus"><a href="#">타코</a></li>
+                            <li class="submenus"><a href="#">부리또</a></li>
+                            <li class="submenus"><a href="#">기타</a></li>
+                        </ul>
+                    </li>
+                    <li class="mainmenu"><a href="#">회사소개</a></li>
+                    <li class="mainmenu"><a href="#">매장검색</a></li>
+                    <li class="mainmenu"><a href="#">고객센터</a></li>
+                    <li class="mainmenu"><a href="#">주문</a></li>
+                    {% if user %}
+                    <li class="mainmenu"><a href="/auth/profile">마이페이지</a></li>
+                    <li class="mainmenu"><a href="/auth/logout">로그아웃</a></li>
+                    {% else %}
+                    <li class="mainmenu"><a id="login-link" href="/auth/login"><img class="login-icon"
+                                src="/image/user.png" alt="로그인, 회원가입"></a>
+                        {% endif %}
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+    </main>
+    <section>
+        <form action="/auth/join" method="post">
+            <input class="input-box" type="text" placeholder="ID" name="id" required autofocus>
+            <input class="input-box" type="password" placeholder="비밀번호" name="password" required autofocus>
+            <input class="signup-btn" type="submit" value="회원가입">
+        </form>
+    </section>
+    <footer>
+        <div class="footer-wrapper">
+            <a href="/"><img src="/image/tacobell-logo.png" alt="푸터 로고"></a>
+            <div class="copyright">
+                &copy; 2021 TACO BELL CORP. ALL RIGHTS RESERVED.
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

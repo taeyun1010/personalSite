@@ -1,0 +1,28 @@
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+form>input {
+    display: block;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.input-box {
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.signup-btn {
+    width: 200px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}

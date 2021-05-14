@@ -47,8 +47,11 @@ header {
 }
 
 .header-logo {
-    height: 100px;
+    height: 80px;
     width: auto;
+    display: block;
+    margin-top: 10px;
+    float: left;
 }
 
 nav {
@@ -59,7 +62,7 @@ nav>ul>li {
     float: left;
     line-height: 100px;
     margin-right: 50px;
-    width: 100px;
+    width: 80px;
     text-align: center;
 }
 
@@ -73,6 +76,15 @@ nav li a {
     background-color: skyblue;
     display: block;
     width: 100%;
+}
+
+#login-link:hover {
+    background-color: transparent;
+}
+
+.login-icon {
+    width: 70px;
+    height: auto;
 }
 
 .submenus {
