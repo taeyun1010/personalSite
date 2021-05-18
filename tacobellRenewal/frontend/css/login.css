@@ -1,0 +1,35 @@
+form {
+    width: 500px;
+    margin: 0 auto;
+}
+
+form>input,
+button {
+    display: block;
+    margin: 50px auto;
+    padding: 10px;
+}
+
+.input-box {
+    width: 500px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+
+.login-btn,
+.kakao-btn,
+.signup-btn {
+    width: 400px;
+    height: 50px;
+    font-size: 30px;
+    line-height: 30px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.kakao-btn {
+    background-color: yellow;
+}
